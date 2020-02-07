@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SeoSocialShareService } from 'ngx-seo';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-seo';
+
+  constructor(private readonly seoSocialShareService: SeoSocialShareService) {
+
+  }
 }
